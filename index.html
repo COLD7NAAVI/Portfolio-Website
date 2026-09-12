@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Personal professional portfolio of an Electronics & Communication Engineering student, programmer, robotics developer, and cybersecurity enthusiast. Built with verified skills and genuine projects.">
+  <title>Engineering Command Center | Systems, Robotics &amp; Security</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-bar" id="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- Cinematic Background Video Layer -->
+  <div class="video-bg-wrapper" id="video-bg-wrapper" aria-hidden="true">
+    <video id="bg-video" autoplay muted loop playsinline preload="auto">
+      <source src="assets/cyberpunk.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <!-- High-Contrast Cinematic Overlay Gradients & Scanlines -->
+    <div class="video-overlay" id="video-overlay"></div>
+    <div class="scanline-overlay" id="scanline-overlay"></div>
+  </div>
+
+  <!-- Primary Command Navigation -->
+  <header class="site-header" id="site-header">
+    <nav class="nav-container" aria-label="Command Deck Navigation">
+      <div class="nav-brand">
+        <a href="#hero" class="brand-logo" id="brand-logo">
+          <span class="logo-prefix">&gt;</span>
+          <span class="logo-text">COLDGH0ST</span>
+          <span class="cursor-blink">_</span>
+        </a>
+      </div>
+
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link" id="nav-link-about">About</a></li>
+        <li><a href="#skills" class="nav-link" id="nav-link-skills">Arsenal</a></li>
+        <li><a href="#projects" class="nav-link" id="nav-link-projects">Projects</a></li>
+        <li><a href="#academics" class="nav-link" id="nav-link-academics">Academics</a></li>
+        <li><a href="#cyber-lab" class="nav-link" id="nav-link-cyber">Cyber Lab</a></li>
+        <li><a href="#milestones" class="nav-link" id="nav-link-milestones">Milestones</a></li>
+        <li><a href="#contact" class="nav-link" id="nav-link-contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <div class="status-indicator" id="status-indicator" title="Current Academic & Project Status">
+          <span class="status-dot"></span>
+          <span class="status-text">ECE // AVAILABLE FOR INTERNSHIPS</span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content Flow -->
+  <main id="main-content">
+
+    <!-- 1. HERO SECTION ("Command Bridge") -->
+    <section class="hero-section" id="hero">
+      <div class="hero-container">
+        <!-- Telemetry HUD Bar -->
+        <div class="hud-telemetry-bar">
+          <div class="telemetry-item">
+            <span class="telemetry-label">SYSTEM_ID:</span>
+            <span class="telemetry-val">COLDGH0ST_01</span>
+          </div>
+          <div class="telemetry-item">
+            <span class="telemetry-label">LOCAL_TIME:</span>
+            <span class="telemetry-val" id="hud-clock">--:--:--</span>
+          </div>
+          <div class="telemetry-item">
+            <span class="telemetry-label">SECURITY_STATUS:</span>
+            <span class="telemetry-val text-emerald">AUTHENTICATED</span>
+          </div>
+          <div class="telemetry-item">
+            <span class="telemetry-label">DATA_INTEGRITY:</span>
+            <span class="telemetry-val text-cyan">100% VERIFIED</span>
+          </div>
+        </div>
+
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>ELECTRONICS &amp; COMMUNICATION ENGINEERING UNDERGRAD</span>
+          </div>
+
+          <h1 class="hero-title" id="hero-title">
+            Bridging <span class="text-gradient">Hardware, Software</span> &amp; Intelligent Systems.
+          </h1>
+
+          <div class="typewriter-container" aria-label="Dynamic Specializations">
+            <span class="typewriter-prefix">&gt; FOCUS: </span>
+            <span class="typewriter-text" id="typewriter-text">Robotics &amp; Embedded Systems</span>
+            <span class="cursor-blink">|</span>
+          </div>
+
+          <p class="hero-subtitle" id="hero-subtitle">
+            An Electronics and Communication Engineering undergraduate focused on cybersecurity, software engineering,
+            networks, systems, embedded technology, and physical computing. I build real projects, explore security
+            through hands-on labs and CTFs, and enjoy understanding systems from low-level hardware to modern software
+            infrastructure.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary" id="cta-view-work">
+              <span>Inspect Real Projects</span>
+              <span class="btn-icon">&rarr;</span>
+            </a>
+            <a href="#cyber-lab" class="btn btn-secondary" id="cta-lab">
+              <span>Open Cyber Lab</span>
+            </a>
+            <a href="#contact" class="btn btn-tertiary" id="cta-contact">
+              <span>Initialize Comms</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT ME SECTION ("Operator Dossier") -->
+    <section class="section-container" id="about">
+      <div class="section-header">
+        <div class="section-tag">&gt; 01 // OPERATOR_PROFILE</div>
+        <h2 class="section-title">About <span class="text-gradient">The Engineer</span></h2>
+        <p class="section-desc">Grounded in circuit theory, hardware-software integration, and real-time distributed
+          software.</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Technical Dossier Card -->
+        <div class="hud-card dossier-card">
+          <div class="card-header">
+            <span class="hud-id">DOSSIER_ID: 0x7E</span>
+            <span class="status-chip chip-emerald">ACTIVE_STUDENT</span>
+          </div>
+          <div class="dossier-body">
+            <div class="dossier-avatar-placeholder">
+              <div class="avatar-glitch-frame">
+                <span class="avatar-icon">&lt;/&gt;</span>
+                <span class="avatar-role">COLDGH0ST // ECE STUDENT</span>
+              </div>
+            </div>
+            <div class="dossier-meta">
+              <div class="meta-row">
+                <span class="meta-label">OPERATOR:</span>
+                <span class="meta-value">Naveen Heshi (COLDGH0ST)</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">DISCIPLINE:</span>
+                <span class="meta-value">Electronics &amp; Communication Eng.</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">CORE FOCUS:</span>
+                <span class="meta-value">Security, Software, Networks, Systems</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">CURRENT STATUS:</span>
+                <span class="meta-value text-cyan">Undergraduate Student &amp; Builder</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="#contact" class="btn btn-sm btn-secondary w-full">Request Full Credentials</a>
+          </div>
+        </div>
+
+        <!-- Narrative Pillars -->
+        <div class="about-narrative">
+          <div class="hud-card narrative-card">
+            <div class="pillar-header">
+              <span class="pillar-num">01.</span>
+              <h3 class="pillar-title">Hardware-Level Intuition (ECE)</h3>
+            </div>
+            <p class="pillar-text">
+              My engineering education in Electronics and Communication provides a solid foundation. Understanding
+              digital circuits, microcontrollers, memory layouts, and communication protocols (UART, I2C, SPI) allows me
+              to approach problems with a clear view of how software executes on physical silicon.
+            </p>
+          </div>
+
+          <div class="hud-card narrative-card">
+            <div class="pillar-header">
+              <span class="pillar-num">02.</span>
+              <h3 class="pillar-title">Software Engineering &amp; Systems</h3>
+            </div>
+            <p class="pillar-text">
+              Beyond low-level fundamentals, I build practical software applications. In projects like
+              <strong>ShadowDock</strong>, I explore real-time networked architectures, integrating WebSockets, Redis
+              caching, relational PostgreSQL schemas, and containerization with Docker.
+            </p>
+          </div>
+
+          <div class="hud-card narrative-card">
+            <div class="pillar-header">
+              <span class="pillar-num">03.</span>
+              <h3 class="pillar-title">Cybersecurity Labs &amp; Physical Computing</h3>
+            </div>
+            <p class="pillar-text">
+              I actively explore cybersecurity through hands-on labs and CTFs on TryHackMe, building solid networking,
+              enumeration, and system defense fundamentals. Alongside software, I work with embedded systems and
+              physical computing projects like the <strong>SONU Robot</strong> using a Raspberry Pi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SKILLS & TECHNICAL ARSENAL ("Technical Subsystems") -->
+    <section class="section-container" id="skills">
+      <div class="section-header">
+        <div class="section-tag">&gt; 02 // TECHNICAL_ARSENAL</div>
+        <h2 class="section-title">Verified <span class="text-gradient">Tech Stack</span></h2>
+        <p class="section-desc">Strictly verified technologies actively practiced in coursework, laboratory research,
+          and genuine project implementations.</p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="filter-tab-group" id="skills-filter-group" role="tablist">
+        <button class="filter-tab active" data-filter="all" role="tab">All Subsystems</button>
+        <button class="filter-tab" data-filter="systems" role="tab">Core &amp; Systems</button>
+        <button class="filter-tab" data-filter="robotics" role="tab">Robotics &amp; Hardware</button>
+        <button class="filter-tab" data-filter="data-infra" role="tab">Data &amp; Infrastructure</button>
+        <button class="filter-tab" data-filter="web-realtime" role="tab">Web &amp; Real-Time</button>
+        <button class="filter-tab" data-filter="cybersecurity" role="tab">Cybersecurity</button>
+      </div>
+
+      <div class="skills-grid" id="skills-grid">
+        <!-- Card 1: Core Programming & Systems -->
+        <div class="hud-card skill-card" data-category="systems">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">&lt;/&gt;</div>
+            <span class="skill-category-badge">CORE &amp; SYSTEMS</span>
+          </div>
+          <h3 class="skill-title">Systems Programming</h3>
+          <p class="skill-desc">Foundational, high-performance languages for system programming, data structures, and
+            algorithms.</p>
+          <ul class="skill-tag-list">
+            <li class="skill-tag">C</li>
+            <li class="skill-tag">C++</li>
+            <li class="skill-tag">Python</li>
+            <li class="skill-tag">Linux (CLI / Bash)</li>
+            <li class="skill-tag">Git Version Control</li>
+          </ul>
+          <div class="skill-usage-note">
+            <span class="note-dot"></span>
+            <span>Applied in academic labs, algorithms &amp; hardware automation</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Robotics & Embedded Hardware -->
+        <div class="hud-card skill-card" data-category="robotics">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">&#9881;</div>
+            <span class="skill-category-badge">EMBEDDED &amp; ROBOTICS</span>
+          </div>
+          <h3 class="skill-title">Hardware Interfacing</h3>
+          <p class="skill-desc">Physical computing, sensor telemetry, motor actuation, and single-board computer
+            integration.</p>
+          <ul class="skill-tag-list">
+            <li class="skill-tag">Raspberry Pi</li>
+            <li class="skill-tag">GPIO Programming</li>
+            <li class="skill-tag">Sensors &amp; Telemetry</li>
+            <li class="skill-tag">Motor Driver Circuits</li>
+            <li class="skill-tag">Camera Modules</li>
+            <li class="skill-tag">Voice &amp; Audio Input</li>
+          </ul>
+          <div class="skill-usage-note">
+            <span class="note-dot"></span>
+            <span>Implemented in physical SONU / Saras Robot</span>
+          </div>
+        </div>
+
+        <!-- Card 3: Databases & Infrastructure -->
+        <div class="hud-card skill-card" data-category="data-infra">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">&#9776;</div>
+            <span class="skill-category-badge">DATA &amp; INFRA</span>
+          </div>
+          <h3 class="skill-title">Databases &amp; Containers</h3>
+          <p class="skill-desc">Persistent relational systems, distributed document stores, caching layers, and
+            containerized deployment.</p>
+          <ul class="skill-tag-list">
+            <li class="skill-tag">PostgreSQL</li>
+            <li class="skill-tag">SQL Relational Modeling</li>
+            <li class="skill-tag">MongoDB</li>
+            <li class="skill-tag">Redis (Pub/Sub &amp; Cache)</li>
+            <li class="skill-tag">Docker Containerization</li>
+          </ul>
+          <div class="skill-usage-note">
+            <span class="note-dot"></span>
+            <span>Architected in ShadowDock chat platform</span>
+          </div>
+        </div>
+
+        <!-- Card 4: Web & Real-Time -->
+        <div class="hud-card skill-card" data-category="web-realtime">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">&#9889;</div>
+            <span class="skill-category-badge">REAL-TIME WEB</span>
+          </div>
+          <h3 class="skill-title">Real-Time Web Engines</h3>
+          <p class="skill-desc">Low-latency bi-directional communication, REST API services, and modern reactive user
+            interfaces.</p>
+          <ul class="skill-tag-list">
+            <li class="skill-tag">Node.js</li>
+            <li class="skill-tag">Express.js</li>
+            <li class="skill-tag">Socket.io (WebSockets)</li>
+            <li class="skill-tag">React</li>
+            <li class="skill-tag">Vite</li>
+            <li class="skill-tag">JavaScript (ES6+)</li>
+            <li class="skill-tag">HTML5 &amp; CSS3</li>
+          </ul>
+          <div class="skill-usage-note">
+            <span class="note-dot"></span>
+            <span>Core stack of ShadowDock distributed chat</span>
+          </div>
+        </div>
+
+        <!-- Card 5: Cybersecurity & Networking -->
+        <div class="hud-card skill-card" data-category="cybersecurity">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">&#128272;</div>
+            <span class="skill-category-badge">SECURITY &amp; NETWORKS</span>
+          </div>
+          <h3 class="skill-title">Network &amp; Cyber Defense</h3>
+          <p class="skill-desc">Network protocol inspection, security vulnerability assessment, system hardening, and
+            ethical hacking.</p>
+          <ul class="skill-tag-list">
+            <li class="skill-tag">TCP/IP, UDP, DNS, HTTP/S</li>
+            <li class="skill-tag">Ethical Hacking Foundations</li>
+            <li class="skill-tag">Network Traffic Analysis</li>
+            <li class="skill-tag">Linux System Hardening</li>
+            <li class="skill-tag">OWASP Security Concepts</li>
+          </ul>
+          <div class="skill-usage-note">
+            <span class="note-dot"></span>
+            <span>Active learning &amp; foundation for Shadow : Helix Nebula</span>
+          </div>
+        </div>
+
+        <!-- Card 6: AI & Applied Intelligence -->
+        <div class="hud-card skill-card" data-category="systems">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">&#9733;</div>
+            <span class="skill-category-badge">AI &amp; INTELLIGENCE</span>
+          </div>
+          <h3 class="skill-title">Applied AI Experimentation</h3>
+          <p class="skill-desc">Exploring generative language models, contextual embeddings, automated task agents, and
+            intelligent assistance.</p>
+          <ul class="skill-tag-list">
+            <li class="skill-tag">Python for AI</li>
+            <li class="skill-tag">LLM API Integration</li>
+            <li class="skill-tag">Prompt Engineering</li>
+            <li class="skill-tag">Context Window Optimization</li>
+            <li class="skill-tag">Edge AI Planning</li>
+          </ul>
+          <div class="skill-usage-note">
+            <span class="note-dot"></span>
+            <span>Investigated in ShadowMoon AI &amp; planned robot intelligence</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PROJECTS SECTION ("Mission Archives") -->
+    <section class="section-container" id="projects">
+      <div class="section-header">
+        <div class="section-tag">&gt; 03 // MISSION_ARCHIVES</div>
+        <h2 class="section-title">Verified <span class="text-gradient">Real Projects</span></h2>
+        <p class="section-desc">Four genuine software, robotics, security, and AI projects with explicit, transparent
+          development lifecycles.</p>
+      </div>
+
+      <!-- Project Filter Bar -->
+      <div class="filter-tab-group" id="projects-filter-group" role="tablist">
+        <button class="filter-tab active" data-filter="all" role="tab">All Deployments</button>
+        <button class="filter-tab" data-filter="robotics" role="tab">Robotics &amp; Hardware</button>
+        <button class="filter-tab" data-filter="web" role="tab">Real-Time Web</button>
+        <button class="filter-tab" data-filter="cybersecurity" role="tab">Cybersecurity</button>
+        <button class="filter-tab" data-filter="ai" role="tab">AI &amp; Research</button>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+
+        <!-- PROJECT 1: SONU / Saras Robot -->
+        <article class="hud-card project-card" data-category="robotics">
+          <div class="project-header">
+            <div class="project-id-block">
+              <span class="project-callsign">PROJECT_01 // ROBOTICS</span>
+              <h3 class="project-title">SONU / Saras Robot</h3>
+            </div>
+            <span class="status-badge badge-dev">
+              <span class="badge-dot"></span>
+              IN ACTIVE DEVELOPMENT
+            </span>
+          </div>
+
+          <p class="project-summary">
+            A physical, intelligent robotics platform built around a Raspberry Pi computing core. Designed to execute
+            voice commands, navigate environments through physical sensors, capture live camera visual feeds, and
+            interface with planned local AI decision models.
+          </p>
+
+          <div class="project-subsystem-box">
+            <div class="subsystem-label">KEY ARCHITECTURAL HIGHLIGHTS:</div>
+            <ul class="subsystem-points">
+              <li><strong>Physical Motor Actuation:</strong> Raspberry Pi GPIO interfacing with motor driver boards for
+                directional navigation.</li>
+              <li><strong>Sensor Telemetry Loop:</strong> Real-time distance and obstacle detection to prevent
+                collisions and map clearance.</li>
+              <li><strong>Voice &amp; Audio Pipeline:</strong> Speech capture and keyword intent processing to trigger
+                autonomous movements.</li>
+              <li><strong>Camera Integration:</strong> Video streaming and optical monitoring for future computer vision
+                object tracking.</li>
+            </ul>
+          </div>
+
+          <div class="project-tech-stack">
+            <span class="tech-pill">Raspberry Pi</span>
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">GPIO &amp; Sensors</span>
+            <span class="tech-pill">Motor Drivers</span>
+            <span class="tech-pill">Camera Module</span>
+            <span class="tech-pill">Voice Control</span>
+          </div>
+
+          <div class="project-actions">
+            <a href="https://github.com/COLD7NAAVI" target="_blank" rel="noopener noreferrer"
+              class="btn btn-sm btn-secondary">
+              <span>View Source &amp; Schematics</span>
+              <span class="btn-icon">&nearr;</span>
+            </a>
+            <span class="project-status-note text-amber">Prototype testing underway</span>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: ShadowDock -->
+        <article class="hud-card project-card" data-category="web">
+          <div class="project-header">
+            <div class="project-id-block">
+              <span class="project-callsign">PROJECT_02 // DISTRIBUTED_WEB</span>
+              <h3 class="project-title">ShadowDock</h3>
+            </div>
+            <span class="status-badge badge-prod">
+              <span class="badge-dot"></span>
+              COMPLETED / IN ACTIVE POLISH
+            </span>
+          </div>
+
+          <p class="project-summary">
+            A high-performance, full-stack real-time communication platform built to handle instantaneous message
+            delivery, connection resilience, state synchronization, and scalable containerized deployment.
+          </p>
+
+          <div class="project-subsystem-box">
+            <div class="subsystem-label">KEY ARCHITECTURAL HIGHLIGHTS:</div>
+            <ul class="subsystem-points">
+              <li><strong>Duplex WebSockets:</strong> Low-latency bi-directional messaging layer powered by Socket.io
+                and Node.js.</li>
+              <li><strong>In-Memory Caching &amp; Pub/Sub:</strong> Redis integration for lightning-fast active session
+                tracking and scalable pub/sub message broadcast.</li>
+              <li><strong>Relational Persistence:</strong> PostgreSQL relational schema for clean user records, message
+                history, and authentication.</li>
+              <li><strong>Dockerized Infrastructure:</strong> Containerized multi-service setup (App, PostgreSQL, Redis)
+                for reproducible deployment.</li>
+            </ul>
+          </div>
+
+          <div class="project-tech-stack">
+            <span class="tech-pill">React</span>
+            <span class="tech-pill">Vite</span>
+            <span class="tech-pill">Node.js</span>
+            <span class="tech-pill">Express</span>
+            <span class="tech-pill">Socket.io</span>
+            <span class="tech-pill">PostgreSQL</span>
+            <span class="tech-pill">Redis</span>
+            <span class="tech-pill">Docker</span>
+          </div>
+
+          <div class="project-actions">
+            <a href="https://github.com/COLD7NAAVI" target="_blank" rel="noopener noreferrer"
+              class="btn btn-sm btn-primary">
+              <span>Inspect Repository</span>
+              <span class="btn-icon">&nearr;</span>
+            </a>
+            <span class="project-status-note text-cyan">Production-ready architecture</span>
+          </div>
+        </article>
+
+        <!-- PROJECT 3: Shadow : Helix Nebula -->
+        <article class="hud-card project-card" data-category="cybersecurity">
+          <div class="project-header">
+            <div class="project-id-block">
+              <span class="project-callsign">PROJECT_03 // CYBERSECURITY</span>
+              <h3 class="project-title">Shadow : Helix Nebula</h3>
+            </div>
+            <span class="status-badge badge-research">
+              <span class="badge-dot"></span>
+              RESEARCH &amp; PLANNED ARCHITECTURE
+            </span>
+          </div>
+
+          <p class="project-summary">
+            A planned, modular cybersecurity and penetration testing platform conceptualized specifically for authorized
+            ethical hackers and security researchers. Designed to streamline security audits, tool orchestration, and
+            automated intelligence.
+          </p>
+
+          <div class="project-subsystem-box">
+            <div class="subsystem-label">KEY ARCHITECTURAL HIGHLIGHTS:</div>
+            <ul class="subsystem-points">
+              <li><strong>Extensible Plugin Architecture:</strong> Dynamic module loading enabling custom recon,
+                scanning, and auditing tools to plug in safely.</li>
+              <li><strong>Audit &amp; Evidence Workflows:</strong> Cryptographic verification of testing logs,
+                step-by-step reporting, and compliance-ready output.</li>
+              <li><strong>Defensive Integrity:</strong> Sandboxed execution environment for authorized assessments and
+                vulnerability tracking.</li>
+              <li><strong>AI-Assisted Intelligence:</strong> Planned integration of AI models to analyze scan logs,
+                summarize CVE exposures, and prioritize remediation.</li>
+            </ul>
+          </div>
+
+          <div class="project-tech-stack">
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">Linux</span>
+            <span class="tech-pill">Network Security</span>
+            <span class="tech-pill">Modular Architecture</span>
+            <span class="tech-pill">Security Reporting</span>
+            <span class="tech-pill">AI Assistance</span>
+          </div>
+
+          <div class="project-actions">
+            <a href="https://github.com/COLD7NAAVI" target="_blank" rel="noopener noreferrer"
+              class="btn btn-sm btn-secondary">
+              <span>Architecture Blueprint</span>
+              <span class="btn-icon">&nearr;</span>
+            </a>
+            <span class="project-status-note text-magenta">Conceptual design &amp; schema phase</span>
+          </div>
+        </article>
+
+        <!-- PROJECT 4: ShadowMoon AI -->
+        <article class="hud-card project-card" data-category="ai">
+          <div class="project-header">
+            <div class="project-id-block">
+              <span class="project-callsign">PROJECT_04 // APPLIED_AI</span>
+              <h3 class="project-title">ShadowMoon AI</h3>
+            </div>
+            <span class="status-badge badge-research">
+              <span class="badge-dot"></span>
+              RESEARCH &amp; EXPERIMENTAL
+            </span>
+          </div>
+
+          <p class="project-summary">
+            An active applied artificial intelligence experimentation and research project exploring modern Large
+            Language Models (LLMs), structured prompt architectures, retrieval mechanisms, and their practical
+            application to robotic autonomy.
+          </p>
+
+          <div class="project-subsystem-box">
+            <div class="subsystem-label">KEY ARCHITECTURAL HIGHLIGHTS:</div>
+            <ul class="subsystem-points">
+              <li><strong>Prompt &amp; Context Optimization:</strong> Testing structured reasoning frameworks and
+                multi-turn conversational agents.</li>
+              <li><strong>Local vs. Cloud Inference:</strong> Benchmarking lightweight open-weight models for potential
+                edge inference on embedded systems.</li>
+              <li><strong>Tool-Calling Integration:</strong> Experimenting with LLMs calling programmatic Python
+                functions and querying databases.</li>
+              <li><strong>Robotics Integration Roadmap:</strong> Exploring how natural language instructions can
+                translate into robot command sequences for SONU/Saras.</li>
+            </ul>
+          </div>
+
+          <div class="project-tech-stack">
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">LLM APIs</span>
+            <span class="tech-pill">Prompt Engineering</span>
+            <span class="tech-pill">Local Inference</span>
+            <span class="tech-pill">Agent Frameworks</span>
+          </div>
+
+          <div class="project-actions">
+            <a href="https://github.com/COLD7NAAVI" target="_blank" rel="noopener noreferrer"
+              class="btn btn-sm btn-secondary">
+              <span>Research Log</span>
+              <span class="btn-icon">&nearr;</span>
+            </a>
+            <span class="project-status-note text-magenta">Ongoing experimentation</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 5. EDUCATION & ENGINEERING BACKGROUND ("Academic Foundations") -->
+    <section class="section-container" id="academics">
+      <div class="section-header">
+        <div class="section-tag">&gt; 04 // ACADEMIC_PROTOCOL</div>
+        <h2 class="section-title">Education &amp; <span class="text-gradient">Engineering Core</span></h2>
+        <p class="section-desc">Rigorous undergraduate engineering foundations connecting physical signals,
+          microprocessors, and software computation.</p>
+      </div>
+
+      <div class="academics-wrapper">
+        <div class="hud-card academic-card">
+          <div class="academic-badge-row">
+            <span class="status-chip chip-cyan">UNDERGRADUATE DEGREE</span>
+            <span class="hud-id">STATUS: ENROLLED &amp; ACTIVE</span>
+          </div>
+
+          <h3 class="academic-degree">
+            Bachelor of Engineering (B.E.) in Electronics &amp; Communication Engineering
+          </h3>
+          <p class="academic-institute">
+            Government SKSJTI Technological Institute, Bengaluru
+          </p>
+          <p class="academic-university">
+            Visvesvaraya Technological University (VTU)
+          </p>
+
+          <div class="academic-coursework-grid">
+            <div class="coursework-category">
+              <div class="category-heading">&gt; CORE HARDWARE &amp; CIRCUITS</div>
+              <ul class="coursework-list">
+                <li>Microprocessors &amp; Microcontrollers</li>
+                <li>Digital Electronics &amp; Logic Design</li>
+                <li>Signals and Systems</li>
+                <li>Electronic Circuits &amp; Solid State Devices</li>
+              </ul>
+            </div>
+
+            <div class="coursework-category">
+              <div class="category-heading">&gt; COMPUTING &amp; NETWORKS</div>
+              <ul class="coursework-list">
+                <li>Computer Communication Networks</li>
+                <li>Object-Oriented Programming (C++ / Python)</li>
+                <li>Data Structures &amp; Algorithms</li>
+                <li>Database Management Systems (SQL)</li>
+              </ul>
+            </div>
+
+            <div class="coursework-category">
+              <div class="category-heading">&gt; PRACTICAL LAB RIGOR</div>
+              <ul class="coursework-list">
+                <li>Hardware Circuit Prototyping &amp; Breadboarding</li>
+                <li>Microcontroller Interfacing &amp; Assembly / C</li>
+                <li>Oscilloscope, Logic Analyzer &amp; Multimeter Debugging</li>
+                <li>Network Packet Simulation &amp; Linux Configuration</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CYBERSECURITY & TECHNICAL LAB ("Cyber Lab Operations") -->
+    <section class="section-container" id="cyber-lab">
+      <div class="section-header">
+        <div class="section-tag">&gt; 05 // LAB_OPERATIONS</div>
+        <h2 class="section-title">Cybersecurity &amp; <span class="text-gradient">Terminal Lab</span></h2>
+        <p class="section-desc">Active study in ethical hacking, network analysis, Linux hardening, and interactive
+          command execution.</p>
+      </div>
+
+      <div class="cyber-lab-grid">
+        <!-- Left: Domain Focus Cards -->
+        <div class="cyber-pillars-col">
+          <div class="hud-card cyber-pillar-card">
+            <div class="cyber-pillar-header">
+              <span class="terminal-prompt-icon">&#9656;</span>
+              <h4>Network Protocol Inspection</h4>
+            </div>
+            <p>
+              Investigating packet flows, three-way TCP handshakes, DNS resolution, and TLS encryption. Utilizing
+              Wireshark and socket programming to demystify data in transit.
+            </p>
+          </div>
+
+          <div class="hud-card cyber-pillar-card">
+            <div class="cyber-pillar-header">
+              <span class="terminal-prompt-icon">&#9656;</span>
+              <h4>Ethical Hacking &amp; Web Security</h4>
+            </div>
+            <p>
+              Hands-on study of the OWASP Top 10, penetration testing methodology, port scanning, and structured
+              capture-the-flag (CTF) challenges on platforms like TryHackMe and HackTheBox.
+            </p>
+          </div>
+
+          <div class="hud-card cyber-pillar-card">
+            <div class="cyber-pillar-header">
+              <span class="terminal-prompt-icon">&#9656;</span>
+              <h4>Linux System Hardening &amp; Homelab</h4>
+            </div>
+            <p>
+              Managing secure Linux environments, user permissions, SSH key authorization, firewall rules, and container
+              isolation via Docker.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right: Interactive Tactical Terminal Simulator -->
+        <div class="hud-card terminal-card" id="terminal-card">
+          <div class="terminal-topbar">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <span class="terminal-title">guest@ece-command-center:~</span>
+            <span class="terminal-action-btn" id="terminal-clear-btn" title="Clear Terminal">CLEAR</span>
+          </div>
+
+          <div class="terminal-screen" id="terminal-screen" tabindex="0" role="region"
+            aria-label="Interactive Cybersecurity Terminal">
+            <div class="terminal-output" id="terminal-output">
+              <div class="term-line text-muted">=======================================================</div>
+              <div class="term-line text-cyan"> ECE COMMAND CENTER // INTERACTIVE TERMINAL v2.4</div>
+              <div class="term-line text-muted"> Grounded in verified systems engineering &amp; real work.</div>
+              <div class="term-line text-muted">=======================================================</div>
+              <div class="term-line">Type <span class="text-emerald">help</span> to view available operations, or click
+                quick chips below.</div>
+              <div class="term-line text-muted">&nbsp;</div>
+            </div>
+
+            <!-- Active Prompt Input Line -->
+            <form class="terminal-input-row" id="terminal-form" autocomplete="off">
+              <label for="terminal-input" class="term-prompt"><span class="text-cyan">guest@ece-sys</span>:<span
+                  class="text-emerald">~</span>$</label>
+              <input type="text" id="terminal-input" class="terminal-input" spellcheck="false"
+                placeholder="type 'help'...">
+            </form>
+          </div>
+
+          <!-- Quick Command Chips for Frictionless Interaction -->
+          <div class="terminal-chips">
+            <span class="chips-label">EXECUTE:</span>
+            <button class="cmd-chip" data-cmd="help">help</button>
+            <button class="cmd-chip" data-cmd="projects">projects</button>
+            <button class="cmd-chip" data-cmd="skills">skills</button>
+            <button class="cmd-chip" data-cmd="about">about</button>
+            <button class="cmd-chip" data-cmd="status">status</button>
+            <button class="cmd-chip" data-cmd="contact">contact</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. DEVELOPMENT MILESTONES ("Engineering Milestones") -->
+    <section class="section-container" id="milestones">
+      <div class="section-header">
+        <div class="section-tag">&gt; 06 // ENGINEERING_TRAJECTORY</div>
+        <h2 class="section-title">Verifiable <span class="text-gradient">Milestones</span></h2>
+        <p class="section-desc">Key technical achievements and completed system integrations. No synthetic statistics or
+          unearned corporate titles.</p>
+      </div>
+
+      <div class="milestones-timeline">
+        <!-- Milestone 1 -->
+        <div class="milestone-item">
+          <div class="milestone-marker">
+            <span class="marker-dot"></span>
+            <span class="marker-line"></span>
+          </div>
+          <div class="hud-card milestone-content">
+            <div class="milestone-meta">
+              <span class="milestone-domain text-cyan">DISTRIBUTED WEB SYSTEMS</span>
+              <span class="milestone-tag">DEPLOYED ARCHITECTURE</span>
+            </div>
+            <h3 class="milestone-heading">Architected &amp; Containerized ShadowDock</h3>
+            <p class="milestone-body">
+              Successfully engineered a full-stack real-time communications application from scratch. Orchestrated
+              WebSockets for instant message transmission, coupled Redis for message caching and pub/sub message
+              broadcasting, structured PostgreSQL data storage, and containerized the ecosystem using Docker.
+            </p>
+          </div>
+        </div>
+
+        <!-- Milestone 2 -->
+        <div class="milestone-item">
+          <div class="milestone-marker">
+            <span class="marker-dot"></span>
+            <span class="marker-line"></span>
+          </div>
+          <div class="hud-card milestone-content">
+            <div class="milestone-meta">
+              <span class="milestone-domain text-amber">EMBEDDED ROBOTICS</span>
+              <span class="milestone-tag">HARDWARE PROTOTYPE</span>
+            </div>
+            <h3 class="milestone-heading">Built Voice-Driven SONU / Saras Robot Core</h3>
+            <p class="milestone-body">
+              Integrated physical motor drivers, sensors, and camera with a Raspberry Pi running Linux. Formulated
+              low-latency Python actuation loops, translated voice commands into physical motion, and designed a pathway
+              for local AI edge inference.
+            </p>
+          </div>
+        </div>
+
+        <!-- Milestone 3 -->
+        <div class="milestone-item">
+          <div class="milestone-marker">
+            <span class="marker-dot"></span>
+            <span class="marker-line"></span>
+          </div>
+          <div class="hud-card milestone-content">
+            <div class="milestone-meta">
+              <span class="milestone-domain text-emerald">ACADEMICS &amp; HARDWARE</span>
+              <span class="milestone-tag">LABORATORY RIGOR</span>
+            </div>
+            <h3 class="milestone-heading">Circuit Simulation &amp; Microcontroller Programming</h3>
+            <p class="milestone-body">
+              Mastered foundational hardware engineering principles: digital logic circuit design, oscilloscope signal
+              debugging, low-level microcontroller programming, and interfacing hardware registers with software
+              control.
+            </p>
+          </div>
+        </div>
+
+        <!-- Milestone 4 -->
+        <div class="milestone-item">
+          <div class="milestone-marker">
+            <span class="marker-dot"></span>
+            <span class="marker-line"></span>
+          </div>
+          <div class="hud-card milestone-content">
+            <div class="milestone-meta">
+              <span class="milestone-domain text-magenta">AI &amp; SECURITY RESEARCH</span>
+              <span class="milestone-tag">ONGOING INITIATIVE</span>
+            </div>
+            <h3 class="milestone-heading">Security Platform Architecture &amp; LLM Exploration</h3>
+            <p class="milestone-body">
+              Formulated the extensible architecture for Shadow : Helix Nebula to deliver modular ethical hacking tools,
+              while systematically testing context engineering and agentic workflows in ShadowMoon AI.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. CONTACT SECTION ("Communications Uplink") -->
+    <section class="section-container" id="contact">
+      <div class="section-header">
+        <div class="section-tag">&gt; 07 // COMMUNICATIONS_UPLINK</div>
+        <h2 class="section-title">Initialize <span class="text-gradient">Transmission</span></h2>
+        <p class="section-desc">Open for software engineering internships, robotics collaboration, and technical
+          research dialogues.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Direct Contact Channels -->
+        <div class="hud-card contact-info-card">
+          <div class="card-header">
+            <span class="hud-id">COORDINATES // DIRECT_CHANNELS</span>
+            <span class="status-chip chip-emerald">STANDBY: READY</span>
+          </div>
+
+          <div class="contact-methods">
+            <div class="contact-method-item">
+              <div class="method-icon">&#9993;</div>
+              <div class="method-details">
+                <span class="method-label">DIRECT EMAIL</span>
+                <a href="mailto:navinheshi@gmail.com" class="method-value" id="email-link">navinheshi@gmail.com</a>
+              </div>
+              <button class="copy-btn" id="copy-email-btn" title="Copy Email to Clipboard">COPY</button>
+            </div>
+
+            <div class="contact-method-item">
+              <div class="method-icon">&lt;/&gt;</div>
+              <div class="method-details">
+                <span class="method-label">GITHUB REPOSITORIES</span>
+                <a href="https://github.com/COLD7NAAVI" target="_blank" rel="noopener noreferrer"
+                  class="method-value">github.com/COLD7NAAVI</a>
+              </div>
+              <span class="method-badge">CODE</span>
+            </div>
+
+            <div class="contact-method-item">
+              <div class="method-icon">&#128101;</div>
+              <div class="method-details">
+                <span class="method-label">LINKEDIN PROFILE</span>
+                <a href="https://www.linkedin.com/in/naveenheshi/" target="_blank" rel="noopener noreferrer"
+                  class="method-value">linkedin.com/in/naveenheshi</a>
+              </div>
+              <span class="method-badge">NETWORK</span>
+            </div>
+
+            <div class="contact-method-item">
+              <div class="method-icon">&#128196;</div>
+              <div class="method-details">
+                <span class="method-label">CURRICULUM VITAE / RESUME</span>
+                <a href="assets/resume.pdf" target="_blank" class="method-value" id="resume-link">[Download Official
+                  Resume]</a>
+              </div>
+              <span class="method-badge">PDF</span>
+            </div>
+          </div>
+
+          <div class="verification-seal">
+            <div class="seal-icon">&#10003;</div>
+            <div class="seal-text">
+              <strong>AUTHENTICITY GUARANTEE:</strong> Every project, skill, and milestone displayed on this portal
+              corresponds to real code, physical hardware, and genuine student engineering.
+            </div>
+          </div>
+        </div>
+
+        <!-- Transmission Form -->
+        <div class="hud-card contact-form-card">
+          <div class="card-header">
+            <span class="hud-id">TRANSMISSION_FORM // DIRECT_DISPATCH</span>
+            <span class="status-chip chip-cyan">PROTOCOL: CLIENT_EMAIL</span>
+          </div>
+
+          <form class="transmission-form" id="transmission-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">&gt; YOUR NAME / CALLSIGN *</label>
+                <input type="text" id="contact-name" name="name" class="form-input" required
+                  placeholder="e.g. Alex Vance">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">&gt; YOUR EMAIL *</label>
+                <input type="email" id="contact-email" name="email" class="form-input" required
+                  placeholder="e.g. alex@engineering.org">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject" class="form-label">&gt; SUBJECT / MISSION OBJECTIVE *</label>
+              <input type="text" id="contact-subject" name="subject" class="form-input" required
+                placeholder="e.g. Internship Inquiry / Robotics Collaboration">
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">&gt; TRANSMISSION PAYLOAD / MESSAGE *</label>
+              <textarea id="contact-message" name="message" class="form-textarea" rows="5" required
+                placeholder="Detail your inquiry, project scope, or opportunity..."></textarea>
+            </div>
+
+            <div class="form-dispatch-note">
+              <span class="note-dot"></span>
+              <span>Dispatches directly via your system email client to <strong>navinheshi@gmail.com</strong></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-full" id="send-btn">
+              <span id="btn-text">Transmit via Email Client</span>
+              <span class="btn-icon">&rarr;</span>
+            </button>
+
+            <div class="transmission-status" id="transmission-status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 9. FOOTER ("System Auxiliary") -->
+  <footer class="site-footer" id="site-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <span class="logo-prefix">&gt;</span>
+            <span class="logo-text">COLDGH0ST</span>
+            <span class="cursor-blink">_</span>
+          </div>
+          <p class="footer-tagline">
+            Electronics &amp; Communication Engineering | Systems, Robotics &amp; Cyber Defense.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <span class="footer-col-title">NAVIGATION</span>
+          <ul class="footer-links">
+            <li><a href="#hero">Command Deck</a></li>
+            <li><a href="#about">Operator Profile</a></li>
+            <li><a href="#skills">Technical Arsenal</a></li>
+            <li><a href="#projects">Real Projects</a></li>
+            <li><a href="#academics">Academics</a></li>
+            <li><a href="#cyber-lab">Cyber Lab</a></li>
+            <li><a href="#contact">Comms Uplink</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <span class="footer-col-title">PROJECTS</span>
+          <ul class="footer-links">
+            <li><a href="#projects">SONU / Saras Robot</a></li>
+            <li><a href="#projects">ShadowDock Messenger</a></li>
+            <li><a href="#projects">Shadow : Helix Nebula</a></li>
+            <li><a href="#projects">ShadowMoon AI</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div class="footer-status">
+          <span class="status-dot"></span>
+          <span>ALL SUBSYSTEMS NOMINAL // 100% VERIFIED DATA INTEGRITY</span>
+        </div>
+
+        <div class="footer-copyright">
+          &copy; 2026 Naveen Heshi (COLDGH0ST). Built with Semantic HTML, CSS &amp; Vanilla JS.
+        </div>
+
+        <button class="back-to-top" id="back-to-top-btn" aria-label="Return to top of page">
+          <span>TOP</span>
+          <span class="btn-icon">&uarr;</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Primary Application Script -->
+  <script src="script.js"></script>
+</body>
+
+</html>
