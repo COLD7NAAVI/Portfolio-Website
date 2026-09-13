@@ -320,9 +320,9 @@ function initInteractiveTerminal() {
     ],
     contact: () => [
       '<span class="text-cyan">DIRECT COMMUNICATION CHANNELS:</span>',
-      '  &gt; Email:             [your.email@example.com]',
-      '  &gt; GitHub:            https://github.com/[your-username]',
-      '  &gt; LinkedIn:          https://linkedin.com/in/[your-profile]'
+      '  &gt; Email:             navinheshi@gmail.com',
+      '  &gt; GitHub:            https://github.com/COLD7NAAVI',
+      '  &gt; LinkedIn:          https://www.linkedin.com/in/naveenheshi/'
     ]
   };
 
@@ -396,7 +396,7 @@ function initContactSystem() {
   // One-Click Email Copy
   if (copyEmailBtn) {
     copyEmailBtn.addEventListener('click', () => {
-      const email = '[your.email@example.com]';
+      const email = 'navinheshi@gmail.com';
       navigator.clipboard.writeText(email)
         .then(() => {
           showToast('COPIED TO CLIPBOARD: ' + email);
@@ -437,7 +437,7 @@ function initContactSystem() {
       const subject = document.getElementById('contact-subject')?.value.trim() || 'Engineering Inquiry';
       const message = document.getElementById('contact-message')?.value.trim() || '';
 
-      const targetEmail = '[your.email@example.com]';
+      const targetEmail = 'navinheshi@gmail.com';
       const emailBody = `Sender Name: ${name}\nSender Email: ${senderEmail}\n\nMessage Payload:\n${message}`;
       const mailtoUrl = `mailto:${targetEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
 
